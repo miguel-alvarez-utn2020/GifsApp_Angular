@@ -1,0 +1,14 @@
+<!-- sideBar -->
+<div class="bg-dark border-right p-3" id="sidebar">
+    <h3 class="text-light text-center">Gifs-App</h3>
+    <hr class="text-white">
+
+    <div class="list-group list-reset">
+        <a  *ngFor="let busqueda of busqueda"
+            (click)="buscar(busqueda)"
+            href="#"
+            class="list-group list-group-item text-center mt-2">
+            {{busqueda | titlecase}} </a>
+    </div>
+</div>
+<!--end sideBar -->
